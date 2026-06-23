@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.top-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-controls input,
+.top-controls select {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.counter {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.flashcard-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.flashcard {
+    width: 100%;
+    max-width: 700px;
+    min-height: 280px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    text-align: center;
+}
+
+.category-badge {
+    background: rgba(255,255,255,0.25);
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+}
+
+.flashcard h2 {
+    font-size: 1.8rem;
+}
+
+.flashcard p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.navigation,
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.primary-btn {
+    background: #00c853;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.dark-btn {
+    background: #222;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.edit-btn {
+    background: #ffb300;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.delete-btn {
+    background: #e53935;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.navigation button {
+    background: white;
+    color: #333;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.dark-mode {
+    background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+.dark-mode .form-section {
+    background: #1e293b;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+}
+
+.dark-mode .navigation button {
+    background: #475569;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top-controls {
+        flex-direction: column;
+    }
+
+    .navigation,
+    .card-actions {
+        flex-direction: column;
+    }
+
+    .flashcard h2 {
+        font-size: 1.4rem;
+    }
+}

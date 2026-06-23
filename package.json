@@ -1,0 +1,20 @@
+{
+  "name": "flashcard-quiz-app",
+  "version": "1.0.0",
+  "description": "CodeAlpha Flashcard Quiz App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "flashcard",
+    "quiz",
+    "codealpha"
+  ],
+  "author": "Manish",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

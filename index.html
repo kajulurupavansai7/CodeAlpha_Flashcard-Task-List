@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📚 Flashcard Quiz App</h1>
+
+            <button id="darkModeBtn" class="dark-btn">
+                🌙 Dark Mode
+            </button>
+        </header>
+
+        <div class="top-controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flashcards..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+
+        </div>
+
+        <div class="counter">
+            <span id="cardCounter">0 / 0</span>
+        </div>
+
+        <div class="flashcard-container">
+
+            <div class="flashcard">
+
+                <div class="category-badge" id="cardCategory">
+                    General
+                </div>
+
+                <h2 id="question">
+                    No Flashcards Yet
+                </h2>
+
+                <p id="answer" class="hidden">
+                    Add your first flashcard below.
+                </p>
+
+                <button id="showAnswerBtn" class="primary-btn">
+                    Show Answer
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="navigation">
+
+            <button id="prevBtn">
+                ⬅ Previous
+            </button>
+
+            <button id="nextBtn">
+                Next ➡
+            </button>
+
+        </div>
+
+        <div class="card-actions">
+
+            <button id="editBtn" class="edit-btn">
+                ✏ Edit
+            </button>
+
+            <button id="deleteBtn" class="delete-btn">
+                🗑 Delete
+            </button>
+
+        </div>
+
+        <section class="form-section">
+
+            <h2>Add / Edit Flashcard</h2>
+
+            <form id="flashcardForm">
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Enter Question"
+                    required
+                >
+
+                <textarea
+                    id="answerInput"
+                    placeholder="Enter Answer"
+                    required
+                ></textarea>
+
+                <input
+                    type="text"
+                    id="categoryInput"
+                    placeholder="Category (Science, Coding, History...)"
+                    required
+                >
+
+                <button type="submit" class="primary-btn">
+                    Save Flashcard
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
